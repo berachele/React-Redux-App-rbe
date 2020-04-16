@@ -1,23 +1,9 @@
-import React, { useEffect, useState } from "react"
-import {connect, useDispatch} from "react-redux"
+import React, { useState } from "react"
+import {connect} from "react-redux"
 import Loader from "react-loader-spinner"
 import {fetchRecipe} from "../store/actions/recipeActions"
 
 const Recipes = props => {
-    // const dispatch = useDispatch()
-    // // calling an action creator when mounts
-    // useEffect(()=> {
-    //     const timer =
-    //     setTimeout(()=>{
-            
-    //         dispatch({type: "FETCH_RECIPE_LOAD"})
-    //     }, 1000)
-    //     return (()=> {
-    //         clearTimeout(timer)
-    //         dispatch({type: "SET_LOADING_OFF"})
-    //     }
-    // )}, []) //was working when I put isFetching to true but I want it to load when I click the button
-
     //to be able to search recipes
     const [newRecipe, setNewRecipe] = useState("")
 
