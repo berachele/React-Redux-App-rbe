@@ -16,8 +16,8 @@ const Recipes = props => {
     return(
         <div className="insideApp">
             <div className="header">
-                <h1>Recipe Puppy 🐶</h1>
-                <h2>Easy access to all PAW-some recipes!</h2>
+                <h1>Recipe Puppy</h1>
+                <h2>Easy access to all the PAW-some recipes!</h2>
             </div>
            <div className="body">
                <h3>Start Digging! 🦴</h3>
@@ -50,7 +50,7 @@ const Recipes = props => {
                     })}
                 </div>
             {/* if there's an error */}
-                {props.error && <><h4>Hmm..something's not right</h4><p className="error">There are no recipes with that keyword. Try searching again</p></>}
+                {props.error && <h4 className="error">Hmm..something's not right..<span className="error">Try searching again</span></h4>}
            </div>
         </div>
     )
