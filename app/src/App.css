@@ -73,7 +73,7 @@ h3{
 h4{
   margin: 1% 0;
   font-size: 1.4rem;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Baloo Bhaina 2", cursive;
 }
 
 p, ::placeholder {
@@ -99,4 +99,5 @@ button{
   width: 100px;
   height: 35px;
   border-radius: 5px;
+  font-size: 1rem;
 }

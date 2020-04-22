@@ -21,6 +21,7 @@ const Recipes = props => {
             </div>
            <div className="body">
                <h3>Start Digging! 🦴</h3>
+               <h4>Type in any ingredient to find a recipe</h4>
                 <label htmlFor="rsearch">
                     <input 
                     value={newRecipe}
