@@ -43,11 +43,11 @@ const Recipes = props => {
                     </div>
                 )}
             {/* search results */}
-                <div className="card">
-                    {props.recipe && <h4>BONE-appetit!</h4>}
+                <div className="card-container">
+                    {props.recipe && <><h4>BONE-appetit!</h4><br/></>}
                     {props.recipe && props.recipe.map(food => {
                         console.log("FOOD", food)
-                        return (<p>{food.recipeTitle}, {food.href}, {food.ingredients}</p>)
+                        return (<div className="card" ><h4>{food.recipeTitle}</h4><p>{food.href}</p><p>{food.ingredients}</p></div>)
                     })}
                 </div>
             {/* if there's an error */}
