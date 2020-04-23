@@ -20,7 +20,7 @@ const Recipes = props => {
                 <h2>Easy access to all the PAW-some recipes!</h2>
             </div>
            <div className="body">
-               <h3>Start Digging! 🦴</h3>
+               <h3>Start Digging!</h3>
                <h4>Type in any ingredient to find a recipe</h4>
                 <label htmlFor="rsearch">
                     <input 
@@ -35,7 +35,7 @@ const Recipes = props => {
                 {props.isFetching && (
                     <div><Loader 
                         type="ThreeDots" 
-                        color="#00BFFF" 
+                        color="#bb1a23" 
                         height={80} 
                         width={80}
                         />
@@ -44,7 +44,7 @@ const Recipes = props => {
                 )}
             {/* search results */}
                 <div className="card-container">
-                    {props.recipe && <><h4>BONE-appetit!</h4><br/></>}
+                    {props.recipe && <><h4 className="enjoy">BONE-appetit!</h4><br/></>}
                     {props.recipe && props.recipe.map(food => {
                         console.log("FOOD", food)
                         return (

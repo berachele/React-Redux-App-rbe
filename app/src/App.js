@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Recipes />
       <footer>
-        <p>Photo by Charles Deluvio on Unsplash</p>
+        <p>Photo by Charles Deluvio on Unsplash and Henry & Co. on Unsplash</p>
       </footer>
     </div>
   );
