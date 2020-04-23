@@ -47,7 +47,14 @@ const Recipes = props => {
                     {props.recipe && <><h4>BONE-appetit!</h4><br/></>}
                     {props.recipe && props.recipe.map(food => {
                         console.log("FOOD", food)
-                        return (<div className="card" ><h4>{food.recipeTitle}</h4><p>{food.href}</p><p>{food.ingredients}</p></div>)
+                        return (
+                        <div className="card" >
+                            <h4>{food.recipeTitle}</h4>
+                            <div className="card-info">
+                                <p><span>Recipe:</span> {food.href}</p>
+                                <p><span>Ingredients:</span> {food.ingredients}</p>
+                            </div>
+                        </div>)
                     })}
                 </div>
             {/* if there's an error */}
