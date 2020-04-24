@@ -4,7 +4,7 @@ import axios from "axios"
 
 export const fetchRecipe = input => dispatch => {
     dispatch({type: "FETCH_RECIPE_LOAD"})
-    setTimeout(()=> axios.get(`http://www.recipepuppy.com/api/?i=${input}`)
+    setTimeout(()=> axios.get(`https://www.recipepuppy.com/api/?i=${input}`)
     .then(res => {
         console.log("This is RESPONSE", res)
         //I will want res.results[]
