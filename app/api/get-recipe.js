@@ -3,7 +3,8 @@
 const fetch = require('node-fetch')
 
 module.exports =  async (req, res) => {
-  let response = await fetch('http://recicepuppy.com/api/')
+  const input = req.query.i
+  let response = await fetch(`http://recipepuppy.com/api/?i=${input}`)
   let json = await response.json()
   res.json(json)
 }
